@@ -33,9 +33,8 @@ class ProductDetailAdapter(private val context: Context): RecyclerView.Adapter<P
         holder.bind(data[position])
     }
 
-
     inner class ProductDetailHolder(view: View): RecyclerView.ViewHolder(view){
-       val img_product_detail_item : ImageView = view.findViewById(R.id.img_product_detail_item)
+        val img_product_detail_item : ImageView = view.findViewById(R.id.img_product_detail_item)
         val txt_product_detail_item_title: TextView = view.findViewById(R.id.txt_product_detail_item_title)
         val txt_product_detail_item_price: TextView = view.findViewById(R.id.txt_product_detail_item_price)
 

@@ -185,7 +185,7 @@ class SearchFragment : Fragment() {
         call.enqueue(
             object : Callback<ProductSearchData> {
                 override fun onFailure(call: Call<ProductSearchData>, t: Throwable) {
-                    Toast.makeText(context, "안된다고오오", Toast.LENGTH_SHORT).show()
+
                 }
 
                 override fun onResponse(

@@ -127,7 +127,6 @@ class ActivityProductDetail : AppCompatActivity() {
 
         rv_product_detail.adapter = rv_product_detail_adapter
 
-
         val categoryAdapter =
             ArrayAdapter(
                 this@ActivityProductDetail,
@@ -183,8 +182,6 @@ class ActivityProductDetail : AppCompatActivity() {
             )
         }
 
-
-
         call.enqueue(
             object : Callback<ProductDetailData> {
                 override fun onFailure(call: Call<ProductDetailData>, t: Throwable) {
@@ -234,7 +231,7 @@ class ActivityProductDetail : AppCompatActivity() {
                             productDetailDataList.data[productDetailDataList.data.size - 1].common_data.product_standard1
                         txt_activity_product_detail_absorption2.text =
                             productDetailDataList.data[productDetailDataList.data.size - 1].common_data.product_standard2
-                        txt_activity_product_detail_citation1.text =
+                        txt_activity_product_detail_citation2.text =
                             productDetailDataList.data[productDetailDataList.data.size - 1].common_data.product_standard3
                         txt_activity_product_detail_content1.text =
                             productDetailDataList.data[productDetailDataList.data.size - 1].common_data.product_standard1_value

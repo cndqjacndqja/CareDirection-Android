@@ -58,7 +58,7 @@ class ActivityProductStandard : AppCompatActivity() {
             getProductStandardItem(txt_activity_product_top_title.text.toString())
 
         }catch(e : Exception){
-            Toast.makeText(this@ActivityProductStandard,"안돼", Toast.LENGTH_SHORT).show()
+
         }
 
 
