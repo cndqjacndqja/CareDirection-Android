@@ -56,7 +56,6 @@ class ActivityProductStandard : AppCompatActivity() {
             extraname = intent.getStringExtra("name")!!.toString()
             txt_activity_product_top_title.text = extraname
             getProductStandardItem(txt_activity_product_top_title.text.toString())
-
         }catch(e : Exception){
 
         }
